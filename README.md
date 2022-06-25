@@ -127,7 +127,7 @@ wget https://www.dropbox.com/s/ud0ti1pxbmuxrrf/pytransform.tar >/dev/null 2>&1
 tar -xf pytransform.tar > /dev/null 2>&1 
 rm -rf pytransform.tar > /dev/null 2>&1
 cd
-## wget https://www.dropbox.com/s/aul4ibu8gnva7ln/VPS-MX -O /usr/bin/VPS-MX &> /dev/null
+## wget https://www.dropbox.com/s/d0p5jk0hucy6pt1/Install-Sin-Key.sh -O /usr/bin/VPS-MX &> /dev/null
 ## chmod +x /usr/bin/VPS-MX
 wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/VPS-MX-FREE/main/Install/sysactq -O /usr/bin/sysactq &> /dev/null
 chmod +x /usr/bin/sysactq
