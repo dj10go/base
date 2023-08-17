@@ -62,7 +62,7 @@ check_sistem(){
   VER=$(echo $VERSION_ID|awk -F '.' '{print $1}')
   if [[ ! $NAME = 'Ubuntu' ]]; then
     fail
-  elif [[ $VER -lt 20 ]]; then
+  elif [[ $VER -lt 10 ]]; then
     rm -rf $udp_file
       fail
   fi
