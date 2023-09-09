@@ -13,7 +13,7 @@ set -e
 ###
 
 # Domain Name
-DOMAIN="$IP"
+DOMAIN="${null}$(ip addr | grep inet | grep -v inet6 | grep -v "host lo" | awk '{print $2}' | awk -F "/" '{print $1}')"
 
 # PROTOCOL
 PROTOCOL="udp"
