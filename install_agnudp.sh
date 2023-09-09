@@ -13,7 +13,7 @@ set -e
 ###
 
 # Domain Name
-DOMAIN="%IP"
+DOMAIN="$IP"
 
 # PROTOCOL
 PROTOCOL="udp"
