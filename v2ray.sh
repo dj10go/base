@@ -1,5 +1,5 @@
 #!/bin/bash
-# Author: Jrohy
+# Author: Jrohy2
 # github: https://github.com/Jrohy/multi-v2ray
 
 #定时任务北京执行时间(0~23)
