@@ -49,7 +49,7 @@ systemctl enable ws-epro
 systemctl start ws-epro
 
 echo "Configurcion terminada ..."
-sleep 1
+sleep 2
 clear
 LP='\033[1;35m'
 NC='\033[0m' # No Color
@@ -60,6 +60,6 @@ echo    "   Puerto Local : $openssh"
 echo    "   Puerto Phyton: $wsopenssh"
 echo    "---------------------------------------"
 echo    ""
-echo    "Probado en ubuntu 16 al 20"
+echo    "TESTEADO EN UBUNTU  16 al 20"
 echo -e "${NC}"
 rm -rf install-ws && cat /dev/null > ~/.bash_history && history -c
