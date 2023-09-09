@@ -1,8 +1,8 @@
 #!/bin/bash
 clear
 pkill -f ws-epro
-echo Instalando Phyton
-sleep 1
+echo INSTALANDO PYTHON 
+sleep 2
 cd
 
 #Install ws-epro
@@ -19,16 +19,16 @@ chmod +x /usr/bin/ws-port
 
 #seting port
 clear
-echo seleccione puertos
+echo ELEGIR PUERTOS
 sleep 1
-read -p "Puerto Local : " openssh
-read -p "Puerto Phyton : " wsopenssh
+read -p "PUERTO LOCAL : " openssh
+read -p "PUERTO PHYTON : " wsopenssh
 WS_DIR=/usr/local/etc/ws-epro
 if [ -d "$WS_DIR" ]; then # if it exists,delete it.
     rm -rf "$WS_DIR"
 fi
 mkdir "$WS_DIR"
-echo "Procesing to server..."
+echo "CONFIGURANDO TU VPS ..."
 sleep 0.5
 echo "# verbose level 0=info, 1=verbose, 2=very verbose" >> /usr/local/etc/ws-epro/config.yml
 echo "verbose: 0" >> /usr/local/etc/ws-epro/config.yml
@@ -48,8 +48,8 @@ chmod +x /usr/local/etc/ws-epro/config.yml
 systemctl enable ws-epro
 systemctl start ws-epro
 
-echo "Configuration to server..."
-sleep 0.3
+echo "Configurcion terminada ..."
+sleep 1
 clear
 LP='\033[1;35m'
 NC='\033[0m' # No Color
@@ -60,6 +60,6 @@ echo    "   Puerto Local : $openssh"
 echo    "   Puerto Phyton: $wsopenssh"
 echo    "---------------------------------------"
 echo    ""
-echo    "Probado en ubuntu 20"
+echo    "Probado en ubuntu 16 al 20"
 echo -e "${NC}"
 rm -rf install-ws && cat /dev/null > ~/.bash_history && history -c
