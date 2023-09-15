@@ -17,12 +17,12 @@ sudo touch /etc/UDPCustom/udp-custom
 udp_dir='/etc/UDPCustom'
 udp_file='/etc/UDPCustom/udp-custom'
 
-sudo apt update -y
-sudo apt upgrade -y
-sudo apt install -y wget
-sudo apt install -y curl
-sudo apt install -y dos2unix
-sudo apt install -y neofetch
+yum update -y
+yum upgrade -y
+yum install -y wget
+yum install -y curl
+yum install -y dos2unix
+yum install -y neofetch
 
 source <(curl -sSL 'https://raw.githubusercontent.com/Redjoker256/Udpcustom/main/module/module')
 
