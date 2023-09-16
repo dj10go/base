@@ -735,13 +735,13 @@ exclude(){
   msg -bar3
   print_center -ama "${a23:-Ejemplos de puertos a excluir}:"
   print_center -ama "dnstt (slowdns) udp 53 5300"
-  print_center -ama "wireguard udp 51820"
-  print_center -ama "openvpn udp 1194"
+  print_center -ama "Venta de Droplet VPS "
+  print_center -ama "canal telegram @vps10"
   msg -bar
   print_center -verd "${a24:-ingresa los puertos separados por espacios}"
   print_center -verd "${a25:-Ejemplo}: 53 5300 51820 1194"
   msg -bar3
-  in_opcion_down "${a26:-digita puertos o enter saltar}"
+  in_opcion_down "${a26:-ENTER PARA SEGUIR}"
   del 2
   tmport=($opcion)
   for (( i = 0; i < ${#tmport[@]}; i++ )); do
