@@ -54,7 +54,7 @@ check_sistem(){
   fail(){
     clear
     echo -e "\e[1m\e[31m=====================================================\e[0m"
-    echo -e "\e[1m\e[33m${a94:-este script no es compatible con tu systema operativo}\e[0m"
+    echo -e "\e[1m\e[33m${a94:-este script no es compatible con tu Sistema Operativo}\e[0m"
     echo -e "\e[1m\e[33m              ${a95:-Usa Ubuntu 20 o superior}\e[0m"
     echo -e "\e[1m\e[31m=====================================================\e[0m"
     exit
@@ -91,7 +91,7 @@ if [[ ! -e $udp_file/UDPserver.sh ]]; then
 	chmod +x $udp_file/UDPserver.sh
 	rm $(pwd)/$0 &> /dev/null
 	title "${a102:-INSTALACION COMPLETA}"
-	print_center -ama "${a103:-Use el comando\nudp\npara ejecutar el menu}"
+	print_center -ama "${a103:-Use el comando\nudp\nPara Ejecutar el menu}"
 	msg -bar
 	time_reboot 10
 fi
@@ -176,7 +176,7 @@ limiter(){
 				return
 			fi
 		done
-    print_center -ama "${a69:-CONFIGRAR LIMITADOR}"
+    print_center -ama "${a69:-CONFIGURAR LIMITADOR}"
     msg -bar
     print_center -ama "${a70:-Bloquea usuarios cuando exeden}"
     print_center -ama "${a71:-el numero maximo conecciones}"
@@ -617,7 +617,7 @@ new_user(){
 #======= CONFIGURACION UDPSERVER ========
 
 download_udpServer(){
-	msg -nama "        ${a30:-Descargando binario UDPserver} ....."
+	msg -nama "        ${a30:-Descargando Archivos UDPserver} ....."
 	if wget -O /usr/bin/udpServer 'https://bitbucket.org/iopmx/udprequestserver/downloads/udpServer' &>/dev/null ; then
 		chmod +x /usr/bin/udpServer
 		msg -verd 'OK'
@@ -638,7 +638,7 @@ make_service(){
 
 cat <<EOF > /etc/systemd/system/UDPserver.service
 [Unit]
-Description=UDPserver Service by @Rufu99
+Description=UDPserver Service by @diegovip7
 After=network.target
 
 [Service]
@@ -677,7 +677,7 @@ install_UDP(){
 		fi
 	else
 		echo
-		print_center -ama "${a19:-Falla al descargar el binario udpServer}"
+		print_center -ama "${a19:-Falla al descargar el Archivo udpServer}"
 	fi
 	enter	
 }
