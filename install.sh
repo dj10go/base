@@ -32,12 +32,12 @@ time_reboot() {
 
   while [ $REBOOT_TIMEOUT -gt 0 ]; do
     print_center -ne "-$REBOOT_TIMEOUT-\r"
-    sleep 1
+    sleep 3
     : $((REBOOT_TIMEOUT--))
   done
   rm /home/ubuntu/install.sh &>/dev/null
   rm /root/install.sh &>/dev/null
-  echo -e "\033[01;31m\033[1;33m More Updates, Follow Us On \033[1;31m(\033[1;36mTelegram\033[1;31m): \033[1;37m@voltssh\033[0m"
+  echo -e "\033[01;31m\033[1;33m More Updates, Follow Us On \033[1;31m(\033[1;36mTelegram\033[1;31m): \033[1;37m@diegovip7\033[0m"
   reboot
 }
 
@@ -127,10 +127,10 @@ else
   clear
   echo ""
   echo ""
-  print_center -ama "${a103:-setting up, please wait...}"
+  print_center -ama "${a103:-setting up, ESPERE SENTADO...}"
   sleep 3
   title "${a102:-Installation Successful}"
-  print_center -ama "${a103:-  To show menu type: \nudp\n}"
+  print_center -ama "${a103:-  PARA VER EL MENU  ESCRIBE: \nudp\n}"
   msg -bar
   time_reboot 5
 fi
